@@ -54,3 +54,5 @@ print(f" Tunjangan Pendidikan   : Rp {tunjangan_pendidikan:,.0f}")
 print(f" Honor Lembur           : Rp {lembur:,.0f}")
 print("---------------------------------------")
 print(f"Total Gaji              : Rp {total_gaji:,.0f}")
+
+# Tugas SelesaiS
