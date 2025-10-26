@@ -1,18 +1,18 @@
 
-# PROGRAM HITUNG GAJI KARYAWAN
+
 print("PROGRAM HITUNG GAJI KARYAWAN".center(10))
 print("-------------------------------")
 
-# Input data karyawan
+
 nama = input("Nama Karyawan            : ")
 golongan = int(input("Golongan Jabatan (1-3)   : "))
 pendidikan = input("Pendidikan (SMA/D1/D3/S1): ").upper()
 jam_kerja = int(input("Jumlah jam kerja         : "))
 
-# Gaji pokok tetap
+
 gaji_pokok = 300000
 
-# Tunjangan Jabatan
+
 if golongan == 1:
     tunjangan_jabatan = 0.05 * gaji_pokok
 elif golongan == 2:
@@ -23,7 +23,7 @@ else:
     tunjangan_jabatan = 0
     print("Golongan tidak benar!")
 
-# Tunjangan Pendidikan
+
 if pendidikan == "SMA":
     tunjangan_pendidikan = 0.025 * gaji_pokok
 elif pendidikan == "D1":
@@ -36,16 +36,16 @@ else:
     tunjangan_pendidikan = 0
     print("Pendidikan tidak benar!")
 
-# Honor Lembur
+
 if jam_kerja > 8:
     lembur = (jam_kerja - 8) * 3500
 else:
     lembur = 0
 
-# Total gaji
+
 total_gaji = gaji_pokok + tunjangan_jabatan + tunjangan_pendidikan + lembur
 
-# Output hasil
+
 print("\n---------------------------------------")
 print(f"Karyawan yang bernama {nama}")
 print("Honor yang diterima:")
